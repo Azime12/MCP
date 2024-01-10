@@ -12,7 +12,7 @@ $userid = $_SESSION[ "umail" ];
 	<div class="container">
     <div class="row justify-content-center"> <!-- Center the content -->
         <div class="col-md-6">
-			<h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3>
+			<h3 class="page-header"></a> </h3>
 			<?php
 			include( "database.php" );
 			$new3 = $_GET[ 'eno' ];
@@ -55,7 +55,7 @@ $userid = $_SESSION[ "umail" ];
 					Email : <input type="text" class="form-control"  name="email" value="<?PHP echo $row['Eid'];?>" readonly><br>
 				</div>
 				<div class="form-group">
-					Password : <input type="text" class="form-control"  name="pass" value="<?PHP echo $row['Pass'];?>"><br>
+					Password : <input type="text" class="form-control"  name="pass" ><br>
 				</div><br>
 				<div class="form-group">
 

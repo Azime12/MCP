@@ -33,7 +33,7 @@ $userid = $_SESSION[ "umail" ];
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3>
+			<!-- <h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3> -->
 			<?php
 			include( "database.php" );
 			$sql = "select * from  studenttable";
@@ -95,8 +95,11 @@ $userid = $_SESSION[ "umail" ];
 				</td>
 				<td><a href="updatestudent.php?eno=<?php echo $row['Eno']; ?>"><input type="button" Value="Edit" class="btn btn-info btn-sm"></a>
 				</td>
-				<td><a href="StudentDetails.php?deleteid=<?php echo $row['Eno']; ?>"><input type="submit" Value="Delete" name="delete" class="btn btn-info btn-sm"></a>
-				</td>
+				
+<td>
+  <button class='btn btn-info btn-sm' data-toggle="modal" data-target="#confirmDeleteModal" data-studentid="<?php echo $row['Eno']; ?>">Delete</button>
+</td>
+
 			</tr>
 			<?php } ?>
 
@@ -123,6 +126,38 @@ $userid = $_SESSION[ "umail" ];
     </div>
   </div>
 </div>
+<!-- Add this modal structure at the end of your HTML body -->
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmDeleteModalLabel">Confirm Deletion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete this student?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <a href="#" id="confirmDeleteButton" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 	</div>
+	<!-- Add this script at the end of your HTML body -->
+<script>
+  $(document).ready(function () {
+    $('#confirmDeleteModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget);
+      var studentId = button.data('studentid');
+      var confirmDeleteButton = $('#confirmDeleteButton');
+      confirmDeleteButton.attr('href', 'StudentDetails.php?deleteid=' + studentId);
+    });
+  });
+</script>
+
 	<?php include('allfoot.php'); ?>

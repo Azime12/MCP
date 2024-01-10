@@ -40,7 +40,7 @@ $userid = $_SESSION[ "umail" ];
 
 	<div class="row">
 		<div class="col-md-8">
-			<h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3>
+			<!-- <h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3> -->
 			<?php
 			include( "database.php" );
 			$sql = "select * from  facutlytable";
