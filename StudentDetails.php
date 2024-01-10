@@ -99,8 +99,30 @@ $userid = $_SESSION[ "umail" ];
 				</td>
 			</tr>
 			<?php } ?>
+
 			</table>
-			<a href="addnewstudent"><button type="button" value="AddNewStudent" class="btn btn-info btn-sm">Add New Student</button></a>
+			<a style="font-size: 2em;" href="#" data-toggle="modal"  data-target="#addStudentModal"><button type="button" class="btn btn-info btn-sm">Add New Student</button></a>
 		</div>
+
+		<div class="modal fade" id="addStudentModal" tabindex="-1" role="dialog" aria-labelledby="addStudentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="addStudentModalLabel">Add New Student</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Include your add student form here -->
+        <?php include('addnewstudent.php'); ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 	</div>
 	<?php include('allfoot.php'); ?>
