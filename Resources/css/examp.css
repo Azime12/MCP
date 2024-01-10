@@ -1,0 +1,63 @@
+
+*{
+    margin:0px;
+    box-sizing: border-box;
+box-shadow: transparent;
+}
+
+.mainContent{
+    display: flex;
+    width:100%;
+    border: 40px solid green;
+    height: auto;
+
+}
+.exam1{
+    margin-left: 5%;
+   float: left;
+    width:40%;
+   
+ height: 200px;
+
+
+}
+.mainContent img{
+    margin-bottom: 5px;
+    width: 98%;
+    box-sizing: border-box;
+}
+.exam2{
+     margin-left: 10%;
+     width:40%;
+    
+     height: auto;
+     
+
+}
+.photo{
+
+box-sizing: border-box;
+   
+width:100%;
+   
+margin:5px ;
+padding :20px;
+height: auto;
+}
+.ExampPdf{
+    border: solid red;
+    height: 50px;
+    background:rgb(22, 85, 114);
+
+
+}
+.mainContent a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: x-large;
+}
+.ExampPdf:hover{
+    background-color: rgb(7, 20, 20);
+    
+}
+

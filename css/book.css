@@ -1,0 +1,52 @@
+
+.content2{
+    display: flex;
+width:100%;
+margin-left:15%; 
+
+}
+.Grade_12{
+    float: left;
+    width:47% ;
+	margin-top:30px;
+    
+}
+.content2 img{
+
+    width:45%;
+
+    
+}
+.Grade_11{
+float: right;
+    width:47%;
+	margin-top:30px;
+    
+    
+}
+.text_books{
+    width: 90%;
+
+
+
+}
+.download_text{
+    width: 60%;
+ 
+    
+    
+}
+.download_text a:link{
+    font-size: 30px;
+
+    
+
+
+}
+.download_text a:hover{
+    color:red;
+ 
+    
+
+
+}

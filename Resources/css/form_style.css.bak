@@ -1,0 +1,223 @@
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "myDB";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+
+if (mysqli_query($conn, $sql)) {
+    echo "Record updated successfully";
+} else {
+    echo "Error updating record: " . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+?>:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-image: "../../../Resources/images/banners/reg_background.jpg";
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.428571429;
+  font-weight: 400;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  background-color:palegoldenrod;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  margin: auto;
+  color: floralwhite;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  color: #777;
+  display: inline;
+  margin-bottom: 5px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.form-control.success input {
+  border-color: var(--success-color);
+}
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.img {
+  width: 15%;
+  height: auto;
+  align-items: center;
+}
+#reset {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 48px;
+  margin-top: 20px;
+  border: 1px solid #075bb4;
+  border-radius: 20px;
+  background-color:gray;
+}
+
+#submit {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 48px;
+  margin-top: 20px;
+  border: 1px solid #075bb4;
+  border-radius: 20px;
+  background-color: #2ecc71;
+}
+#reset:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #2ecc71;
+  cursor: pointer;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  width: 600px;
+  height: 700px;
+  margin-top: -600px;
+  margin-left: -400px;
+  background: greenyellow;
+  border-radius: 40%;
+  animation: shift 10s linear infinite;
+  z-index: 0;
+}
+@keyframes shift {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  padding: 48px;
+}
+@media (max-width: 440px) {
+  header {
+    padding: 48px 24px;
+  }
+}
+header > h3 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+header > h4 {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 0 48px;
+}
+@media (max-width: 440px) {
+  main {
+    padding: 0 24px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: red;
+  padding: 16px;
+  align-self: center;
+  text-align: center;
+  margin-top: 32px;
+}
+h4{
+  color: aqua;
+  animation: blinking 1.5s infinite;
+}
+  @keyframes blinking {
+  50% {
+    opacity: 0;
+  }
+}

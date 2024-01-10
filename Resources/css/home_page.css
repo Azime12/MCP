@@ -1,0 +1,174 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url("../../Resources/images/banners/home_background1.jpg");
+    flex-direction: column;
+    height: 210px;
+}
+
+.logopart {
+    height: 210px;
+    width: 19%; 
+
+    float: left;
+
+}
+
+.navi {
+    height: 210px;
+    width: 80%;
+
+    float: right;
+}
+.choice a{
+    font-size: x-large;
+
+
+}
+
+#content {
+
+    height: 1030px;
+}
+
+#fcontent {
+    height: 1020px;
+    width: 30%;
+    float: left;
+    border-width: 1px;
+}
+
+#scontent {
+    height: 1020px;
+    width: 66%;
+    border-width: 2px;
+    float: left;
+}
+
+.sdfcontent {
+    height: 1020px;
+    width: 49%;
+    border-width: 3px;
+    float: right;
+}
+
+.sdscontent {
+    height: 1020px;
+    width: 49%;
+    border-width: 5px;
+    float: right;
+}
+
+.footer {
+    height: 200px;
+    border-width: 5px;
+    background-image: url("../../Resources/images/banners/home_background1.jpg");
+    
+}
+
+.our_services {
+    width: 35%;
+    height: 99.9%;
+    float: left;
+    /* border: 1px solid yellow; */
+    display: inline;
+    
+}
+
+.about_as {
+    width: 40%;
+    float: left;
+    height: 99.9%;
+    /* border: 1px solid rebeccapurple; */
+    display: inline;
+    
+}
+
+.contact {
+    width: 25%;
+    height: 99.9%;
+    padding-right: 0;
+    display: inline;
+   
+    /* border: 1px solid brown; */
+}
+
+p {
+    text-indent: 0;
+    padding-left: 30px;
+}
+
+#contact {
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.display {
+    height: 70px;
+}
+
+.login {
+    height: 40px;
+    font-size: x-large;
+    font-family: 'Times New Roman';
+    width: 98%;
+}
+
+.choice a:hover {
+    background: rgb(200, 222, 243);
+    height: 100px;
+    border: solid 2px black;
+}
+
+.anc {
+    font-size: x-large;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+}
+
+.special {
+    text-align: justify;
+}
+
+@media screen and (max-width: 920px) {
+    * {
+         flex-direction: column; 
+        width: 100%;
+        float: none;
+        
+    }
+
+    .wrapper {
+overflow: hidden;
+flex-direction: column-reverse;
+
+
+    }
+
+    .choice a{
+    font-size: larger;
+    overflow: hidden;
+
+
+
+}
+
+#content {
+
+ flex-direction: column;
+
+}
+
+}
+
+
+
+
+
+
+    
+

@@ -1,0 +1,60 @@
+
+.content2{
+    display: flex;
+width:100%;
+border: 10px groove rgb(40, 14, 70);
+ border: solid green; 
+
+}
+.Grade_12{
+    float: left;
+    width:47% ;
+    margin: 1% auto;
+    /* border-right: 10px solid rgb(109, 25, 25); */
+    /* border:solid rgb(228, 59, 59); */
+    
+}
+.content2 img{
+    /* box-sizing: border-box; */
+    width:45%;
+    margin-left: 4px;
+    
+}
+.Grade_11{
+float: right;
+    width:47% ;
+    margin: 1% auto;
+    /* border:solid black; */
+    
+    
+}
+.text_books{
+    width: 90%;
+
+
+margin: 40px auto;
+}
+.download_text{
+    width: 60%;
+    margin: 5px auto;
+    
+    
+}
+.download_text a:link{
+    font-size: 30px;
+    text-decoration: none;
+    color:rgb(39, 39, 148);
+    background: rgb(175, 57, 175);
+    
+
+
+}
+.download_text a:hover{
+    font-size: 30px;
+    text-decoration: none;
+    color:rgb(170, 10, 117);
+    background: rgb(57, 175, 102);
+    
+
+
+}

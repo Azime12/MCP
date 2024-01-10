@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+
+         padding:30px;
+    
+}
+.login_box
+{
+    width: 30%;
+    margin: 40px auto;
+    background:rgba(0,0,0,0.5);
+    padding: 20px;
+   border: 2px solid black;
+    
+}
+.input_box{
+width: 60%;
+    border-bottom: 1px solid #fff;
+}
+label{
+    text-align: center;
+    font-size: larger;
+    padding-left: 20px;
+    margin-top:1px;
+    color:rgb(109, 23, 23);
+    font-family:'Times New Roman', Times, serif ;
+
+}
+#gender{
+    margin-top: 10px;
+}
+/* {
+    margin-top:10px;
+} */
+
+.input_box input{
+    width: 50%;
+    color:#fff;
+    border:none;
+    outline: none;
+    background:transparent;
+    padding-top:15px;
+}
+::placeholder{
+    color: rgb(161, 159, 159);
+}
+
+.loginbutton{
+border: 1px solid #fff ;
+padding:0px;
+ margin:10px auto; 
+text-align: center;
+
+}
+.inputut{
+
+}
+.loginbutton input{
+    
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:none;
+
+    border: none;
+}
+.loginbutton  input:hover{
+    background: rgb(24, 122, 187);
+    color:rgb(46, 9, 80)
+    }
+.sing{
+ background: rgb(24, 122, 187);
+    color:rgb(46, 9, 80)
+
+}
+
+
+
+.createNew{
+    padding:10px;
+    margin: 16px auto;
+}
+.createNew a:link{
+    text-decoration: none;
+    color: rgb(248, 248, 252);
+   
+}
+#date{
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #fff;
+    padding-top: 10px;
+    padding-bottom:10px;
+
+    
+    
+}
+
+.createNew a:hover{
+    background: rgb(13, 67, 104);
+    color:black;
+}
+
+.createNew a:visited{
+    color:rgb(23, 28, 37)
+}

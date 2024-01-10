@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+}
+
+.main {
+    
+    font-size: x-large;
+    margin: 100px auto;
+    height: auto;
+    text-align: center;
+}
+
+form{
+    width: 50%;
+    margin:50px auto;
+}
+
+#email{
+    border: 3px solid rgb(56, 50, 51);
+    padding: 10px;
+    margin-bottom: 18px;
+
+
+}
+#comment{
+    border: solid 2px;
+
+}
+
+
+.submit{
+    color: aliceblue;
+    background: rgb(49, 49, 25);
+    padding: 5px;
+    font-size: large;
+}
+.submit:hover{
+    background: rgb(63, 15, 63);
+    border: solid #fff;
+    
+}
