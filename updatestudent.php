@@ -9,8 +9,9 @@ $userid = $_SESSION[ "umail" ];
 <?php include('adminhead.php'); ?>
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
+	<div class="container">
+    <div class="row justify-content-center"> <!-- Center the content -->
+        <div class="col-md-6">
 			<h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3>
 			<?php
 			include( "database.php" );
@@ -22,42 +23,43 @@ $userid = $_SESSION[ "umail" ];
 			while ( $row = mysqli_fetch_array( $result ) ) {
 				?>
 			<form action="" method="POST" name="update">
+					
 				<div class="form-group">
-					Student ID : <input type="text" name="eno" value="<?php echo $row['Eno']; ?>" readonly>
+					Student ID : <input  class="form-control"  type="text" name="eno" value="<?php echo $row['Eno']; ?>" readonly>
 				</div>
 				<div class="form-group">
-					First Name : <input type="text" name="fname" value="<?php echo $row['FName']; ?>">
+					First Name : <input  class="form-control"   type="text" name="fname" value="<?php echo $row['FName']; ?>">
 				</div>
 				<div class="form-group">
-					Last Name : <input type="text" name="lname" value="<?php echo $row['LName']; ?>"><br>
+					Last Name : <input  class="form-control"  type="text" name="lname" value="<?php echo $row['LName']; ?>"><br>
 				</div>
 				<div class="form-group">
-					Father Name : <input type="text" name="faname" value="<?PHP echo $row['FaName'];?>"><br>
+					Father Name : <input  class="form-control" type="text" name="faname" value="<?PHP echo $row['FaName'];?>"><br>
 				</div>
 				<div class="form-group">
-					Addres : <input type="text" name="addrs" value="<?PHP echo $row['Addrs'];?>"><br>
+					Addres : <input  class="form-control" type="text" name="addrs" value="<?PHP echo $row['Addrs'];?>"><br>
 				</div>
 				<div class="form-group">
-					Gender : <input type="text" name="gender" value="<?PHP echo $row['Gender'];?>"><br>
+					Gender : <input  class="form-control" type="text" name="gender" value="<?PHP echo $row['Gender'];?>"><br>
 				</div>
 				<div class="form-group">
-					Course : <input type="text" name="course" value="<?PHP echo $row['Course'];?>"><br>
+					Course : <input  class="form-control" type="text" name="course" value="<?PHP echo $row['Course'];?>"><br>
 				</div>
 				<div class="form-group">
-					D.O.B. : <input type="text" name="DOB" value="<?PHP echo $row['DOB'];?>" readonly><br>
+					D.O.B. : <input  class="form-control" type="text" name="DOB" value="<?PHP echo $row['DOB'];?>" readonly><br>
 				</div>
 				<div class="form-group">
-					Phone Number : <input type="text" name="phno" value="<?PHP echo $row['PhNo'];?>" maxlength="10"><br>
+					Phone Number : <input  class="form-control" type="text" name="phno" value="<?PHP echo $row['PhNo'];?>" maxlength="10"><br>
 				</div>
 				<div class="form-group">
-					Email : <input type="text" name="email" value="<?PHP echo $row['Eid'];?>" readonly><br>
+					Email : <input type="text" class="form-control"  name="email" value="<?PHP echo $row['Eid'];?>" readonly><br>
 				</div>
 				<div class="form-group">
-					Password : <input type="text" name="pass" value="<?PHP echo $row['Pass'];?>"><br>
+					Password : <input type="text" class="form-control"  name="pass" value="<?PHP echo $row['Pass'];?>"><br>
 				</div><br>
 				<div class="form-group">
 
-					<input type="submit" value="Update!" name="update" class="btn btn-primary">
+					<input type="submit"   value="Update!" name="update" class="btn btn-primary">
 				</div>
 			</form>
 			<?php
