@@ -14,7 +14,7 @@
 		<div class="item active">
 			<div class="fill" style="background-image:url('images/image1.png');"></div>
 			<div class="carousel-caption">
-				<a href="registrationform"><h2 style="color: white;">Register Today</h2></a>
+				<a href="registrationform"><h2 style="color: white;" text-center>Register Today</h2></a>
 			</div>
 		</div>
 		<div class="item">
@@ -47,7 +47,7 @@
 	<!-- Marketing Icons Section -->
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">
+			<h1 class="page-header text-center">
                     Welcome to Matric and College Preparation System
                 </h1>
 		
@@ -56,7 +56,7 @@
 		<div class="col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h4><i class="fa fa-fw fa-gift"></i> Objectives</h4>
+					<h4><i class="fa fa-fw fa-gift text-center"></i> Objectives</h4>
 				</div>
 				<div class="panel-body">
 					<p>
@@ -74,7 +74,7 @@
 		<div class="col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h4><i class="fa fa-fw fa-check"></i> About Us</h4>
+					<h4><i class="fa fa-fw fa-check text-center"></i> About Us</h4>
 				</div>
 				<div class="panel-body">
 					<ul style="list-style-type:disc">
@@ -107,41 +107,41 @@ So please explore and use our website for better understanding and preparation o
 	<!-- Portfolio Section -->
 	<div class="row">
 		<div class="col-lg-12">
-			<h2 class="page-header">UNIVERSITIES OF ETHIOPIAN </h2>
+			<h2 class="page-header text-center">Universities In Ethiopia </h2>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="universities.php">
-                    <img class="img-responsive img-portfolio img-hover" src="Resources/images/banners/AAstu_photo.jfif" alt=""><center><p>Addis Ababa Science and Technology University</p></center>
+                    <img class="img-responsive img-portfolio img-hover thumbnail" src="Resources/images/banners/AAstu_photo.jfif" style="transition: transform 0.8s;" alt=""><center><p>Addis Ababa Science and Technology University</p></center>
                 </a>
 		
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="universities.php">
-                    <img class="img-responsive img-portfolio img-hover" src="Resources/images/banners/aa.jpg" alt=""><center><p>Addis Ababa University</p></center>
+                    <img class="img-responsive img-portfolio img-hover thumbnail" src="Resources/images/banners/aa.jpg" style="transition: transform 0.8s;" alt=""><center><p>Addis Ababa University</p></center>
                 </a>
 		
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="universities.php">
-                    <img class="img-responsive img-portfolio img-hover" src="Resources/images/banners/bdu.jpg" alt=""><center><p>Bahirdar University</p></center>
+                    <img class="img-responsive img-portfolio img-hover thumbnail" src="Resources/images/banners/bdu.jpg" style="transition: transform 0.8s;" alt=""><center><p>Bahirdar University</p></center>
                 </a>
 		
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="universities.php">
-                    <img class="img-responsive img-portfolio img-hover" src="Resources/images/banners/maxresdefault.jpg" alt=""><center><p>Adama Science and Technology University</p></center>
+                    <img class="img-responsive img-portfolio img-hover thumbnail" src="Resources/images/banners/maxresdefault.jpg" style="transition: transform 0.8s;" alt=""><center><p>Adama Science and Technology University</p></center>
                 </a>
 		
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="universities.php">
-                    <img class="img-responsive img-portfolio img-hover" src="Resources/images/banners/gondar-university.jpg" alt=""><center><p>Gonder University</p></center>
+                    <img class="img-responsive img-portfolio img-hover thumbnail" src="Resources/images/banners/gondar-university.jpg" style="transition: transform 0.8s;" alt=""><center><p>Gonder University</p></center>
                 </a>
 		
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="universities.php">
-                    <img class="img-responsive img-portfolio img-hover" src="Resources/images/banners/maxresdefaultss.jpg" alt=""><center><p>Jimma University</p></center>
+                    <img class="img-responsive img-portfolio img-hover thumbnail" src="Resources/images/banners/maxresdefaultss.jpg" style="transition: transform 0.8s;" alt=""><center><p>Jimma University</p></center>
                 </a>
 		
 		</div>
@@ -151,11 +151,11 @@ So please explore and use our website for better understanding and preparation o
 	<!-- Features Section -->
 	<div class="row">
 		<div class="col-lg-12">
-			<h2 class="page-header">OUR SERVICES</h2>
+			<h2 class="page-header text-center">Services</h2>
 		</div>
 		<div class="col-md-6">
 		<br>
-			<p>OUR INSTITUTE MCP PROVIDES:</p>
+			<p>Institutes That MCP Provides</p>
 			<ul>
 			
 				&nbsp;&nbsp;<li>Information about Universities</li>
@@ -169,11 +169,18 @@ So please explore and use our website for better understanding and preparation o
 		<div class="col-md-6">
 			<img class="img-responsive" src="Resources/images/banners/sss.jpg" alt="">
 		</div>
+
 	</div>
 	
 
 
 	<hr>
+
+		<style>
+.thumbnail:hover img {
+    transform: translateY(-10px); /* Adjust the value to control the amount of lift */
+}
+</style>
 
 
 	<?php include('allfoot.php'); ?>
