@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 
 if ( $_SESSION[ "umail" ] == "" || $_SESSION[ "umail" ] == NULL ) {
 	header( 'Location:AdminLogin.php' );
@@ -7,11 +7,8 @@ if ( $_SESSION[ "umail" ] == "" || $_SESSION[ "umail" ] == NULL ) {
 
 $userid = $_SESSION[ "umail" ];
 ?>
-<?php include('adminhead.php'); ?>
-
 <div class="container">
 
-	<div class="row">
 		<?php
 		include( "database.php" );
 		if ( isset( $_POST[ 'addnews' ] ) ) {
@@ -39,42 +36,43 @@ $userid = $_SESSION[ "umail" ];
 			mysqli_close( $connect );
 		}
 		?>
-	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<h3 class="page-header">Welcome <a href="welcomeadmin">Admin</a> </h3>
-			<h4 class="page-header">Add New Student Details</h4>
+	
 			<form action="" method="POST" name="updateform">
-				<div class="form-group">
+				<div class="row">
+				<div class="form-group col-4">
 					<label for="First Name">First Name : </label>
 					<input type="text" class="form-control" id="fname" name="fname" required>
 				</div>
 
-				<div class="form-group">
+				<div class="form-group col-4" >
 					<label for="Last Name">Last Name : </label>
 					<input type="text" class="form-control" id="lname" name="lname" required>
 				</div>
 
-				<div class="form-group">
+				<div class="form-group col-4">
 					<label for="Father Name">Father Name : </label>
 					<input type="text" class="form-control" id="faname" name="faname" required>
 				</div>
+				</div>
 
-				<div class="form-group">
+				<div class="row">
+				<div class="form-group col-4">
 					<label for="DOB">D.O.B. : </label>
 					<input type="text" class="form-control" id="dob" name="DOB" placeholder="YYYY-MM-DD" required>
 				</div>
 
-				<div class="form-group">
+				<div class="form-group col4">
 					<label for="Address">Address : </label>
 					<input type="text" class="form-control" name="addrs" id="addrs" required>
 				</div>
-
-				<div class="form-group">
+				<div class="form-group col-3">
 					<label for="Gender">Gender : &nbsp;</label>
 					<input type="radio" name="gender" value="Male" id="Gender_0" checked> Male
 					<input type="radio" name="gender" value="Female" id="Gender_1"> Female
 				</div>
+				</div>
+
+				
 
 				<div class="form-group">
 					<label for="Course">Course : </label>
@@ -100,6 +98,5 @@ $userid = $_SESSION[ "umail" ];
 					<input type="submit" value="Admission Confirm!" name="addnews" class="btn btn-primary">
 				</div>
 			</form>
-		</div>
 	</div>
-	<?php include('allfoot.php'); ?>
+	

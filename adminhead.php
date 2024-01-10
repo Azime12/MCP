@@ -34,25 +34,23 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
 
+<div class="container">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
-<div>
-<div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">Matric and college Preparation System</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-      <a class="nav-link" href="welcomeadmin">Home</a>
-      </li>
-      <li>
-      <a class="nav-link" href="index" style="font-size: x-large;"><span class="glyphicon glyphicon-off"></span></a>
 
-      </li>
-    
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+    <a class="navbar-brand increased-font-size text-lg text-sm text-md"  style=" font-size:1.6rem;"href="#">Matric and College Preparation System</a>
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+            <a class="nav-link" style=" font-size:1.6rem;" href="welcomeadmin">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index" style="font-size: x-large;"><span class="glyphicon glyphicon-off"></span></a>
+        </li>
     </ul>
- 
-  </div>
+</div>
+
 </div>
 </nav>
    
