@@ -15,50 +15,48 @@
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/ 5shiv/3.7.0/ 5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 	<link rel="shortcut icon" href="images/logo.png" type="image">
 	<link rel="icon" href="images/logo.png" type="image">
 </head>
 
 <body>
-<header>
+
 <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index">Matric and Collage preparation</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="welcomeadmin">Home</a>
-                    </li>
-                  <li>
-                       <a href="index" style="font-size: x-large;"><span class="glyphicon glyphicon-off title=" title="logout"></span> </a>
-                       
-                    </li>			
-                    
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+<div>
+<div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Matric and college Preparation System</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+      <a class="nav-link" href="welcomeadmin">Home</a>
+      </li>
+      <li>
+      <a class="nav-link" href="index" style="font-size: x-large;"><span class="glyphicon glyphicon-off"></span></a>
+
+      </li>
+    
+    </ul>
+ 
+  </div>
+</div>
+</nav>
+   
+       
+   
+
+</body>

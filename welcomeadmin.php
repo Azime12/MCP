@@ -9,7 +9,7 @@ $userid = $_SESSION[ "umail" ];
 <!DOCTYPE  HTML>
 <?php include('adminhead.php'); ?>
 
-<div class="container">
+<div class="container h" style="margin-top: 50px;" >
 	<div class="row">
 		<div class="col-md-8">
 			<!--Welcome page for admin-->
